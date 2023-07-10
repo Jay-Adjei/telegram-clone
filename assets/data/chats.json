@@ -1,0 +1,171 @@
+[
+  {
+    "id": "1",
+    "user": {
+      "id": "u2",
+      "name": "Jeffrey🤡☠",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/lukas.jpeg"
+    },
+    "lastMessage": {
+      "id": "m1",
+      "text": "Chale the class sup?",
+      "createdAt": "2023-06-27T21:30:00.000Z"
+    }
+  },
+  {
+    "id": "2",
+    "user": {
+      "id": "u3",
+      "name": "Charlcy😎😋",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg"
+    },
+    "lastMessage": {
+      "id": "m2",
+      "text": "Jayyyyy, i'm hungry 😣",
+      "createdAt": "2023-06-27T10:48:00.000Z"
+    }
+  },
+  {
+    "id": "3",
+    "user": {
+      "id": "u4",
+      "name": "David☠",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/8.png"
+    },
+    "lastMessage": {
+      "id": "m3",
+      "text": "Nigga , what's good?",
+      "createdAt": "2023-06-28T02:40:00.000Z"
+    }
+  },
+  {
+    "id": "4",
+    "user": {
+      "id": "u5",
+      "name": "Iyabode",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg"
+    },
+    "lastMessage": {
+      "id": "m4",
+      "text": "Could you please check this out for me and tell me what you think?",
+      "createdAt": "2023-06-27T02:46:00.000Z"
+    }
+  },
+  {
+    "id": "5",
+    "user": {
+      "id": "u6",
+      "name": "Anna",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png"
+    },
+    "lastMessage": {
+      "id": "m5",
+      "text": "Have you wached the new episode?",
+      "createdAt": "2023-06-28T02:50:00.000Z"
+    }
+  },
+  {
+    "id": "6",
+    "user": {
+      "id": "u7",
+      "name": "Adrian",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/graham.jpg"
+    },
+    "lastMessage": {
+      "id": "m6",
+      "text": "I think I have a solution for tha.",
+      "createdAt": "2023-06-27T02:50:00.000Z"
+    }
+  },
+  {
+    "id": "7",
+    "user": {
+      "id": "u8",
+      "name": "Borja",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg"
+    },
+    "lastMessage": {
+      "id": "m7",
+      "text": "How are you doing?",
+      "createdAt": "2023-06-27T016:40:00.000Z"
+    }
+  },
+  {
+    "id": "8",
+    "user": {
+      "id": "u9",
+      "name": "Mom",
+      "image": "https://image.shutterstock.com/image-vector/super-mom-hero-superhero-cartoon-600w-720015928.jpg"
+    },
+    "lastMessage": {
+      "id": "m8",
+      "text": "Dear, what did you eat, today?",
+      "createdAt": "2023-06-27T020:40:00.000Z"
+    }
+  },
+  {
+    "id": "9",
+    "user": {
+      "id": "u9",
+      "name": "Andrei",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg"
+    },
+    "lastMessage": {
+      "id": "m8",
+      "text": "What about our podcast?",
+      "createdAt": "2023-06-22T000:40:00.000Z"
+    }
+  },
+  {
+    "id": "10",
+    "user": {
+      "id": "u9",
+      "name": "Misha",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/biahaze.jpg"
+    },
+    "lastMessage": {
+      "id": "m8",
+      "text": "Do I have to send you any more details?",
+      "createdAt": "2023-06-27T017:40:00.000Z"
+    }
+  },
+  {
+    "id": "11",
+    "user": {
+      "id": "u9",
+      "name": "Alina",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/7.png"
+    },
+    "lastMessage": {
+      "id": "m8",
+      "text": "Here is a picture of Mark.",
+      "createdAt": "2023-06-28T01:40:00.000Z"
+    }
+  },
+  {
+    "id": "12",
+    "user": {
+      "id": "u9",
+      "name": "Ivy",
+      "image": "https://c4.wallpaperflare.com/wallpaper/875/291/685/5bd324d3bb71f-wallpaper-preview.jpg"
+    },
+    "lastMessage": {
+      "id": "m8",
+      "text": "Heyy, what's up",
+      "createdAt": "2023-06-28T01:56:00.000Z"
+    }
+  },
+  {
+    "id": "13",
+    "user": {
+      "id": "u9",
+      "name": "Samira",
+      "image": "https://c4.wallpaperflare.com/wallpaper/894/554/384/kobe-bryant-desktop-wallpaper-preview.jpg"
+    },
+    "lastMessage": {
+      "id": "m8",
+      "text": "Hey, Japheeeet",
+      "createdAt": "2023-06-28T00:40:00.000Z"
+    }
+  }
+]
