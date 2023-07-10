@@ -6,7 +6,9 @@ import {
   ScrollView,
   StatusBar,
   SafeAreaView,
+  Pressable,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import dayjs from "dayjs";
@@ -14,10 +16,17 @@ import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(relativeTime);
 
 const ChatListItem = ({ chat }) => {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={styles.maincontainer}>
       <ScrollView>
-        <View style={styles.container}>
+        <Pressable
+          onPress={() =>
+            navigation.navigate("Chat", { id: chat.id, name: chat.user.name })
+          }
+          style={styles.container}
+        >
           <Image
             source={{
               uri: chat.user.image,
@@ -38,7 +47,7 @@ const ChatListItem = ({ chat }) => {
               {chat.lastMessage.text}
             </Text>
           </View>
-        </View>
+        </Pressable>
       </ScrollView>
     </SafeAreaView>
   );
@@ -50,6 +59,7 @@ const styles = StyleSheet.create({
     paddingTop: 5,
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: "lightgray",
+    backgroundColor: "#ffffff",
   },
   scrollview: {
     marginHorizontal: 10,
@@ -57,7 +67,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     marginVertical: 3,
-    borderBottomColor: Colors.gray,
+    borderBottomColor: "lightgray",
   },
   image: {
     width: 50,

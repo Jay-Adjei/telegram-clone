@@ -6,12 +6,19 @@ import {
   StatusBar,
   FlatList,
 } from "react-native";
-import React from "react";
+import { useRoute, useNavigation } from "@react-navigation/native";
+import React, { useEffect } from "react";
 import Message from "../components/message";
 import messages from "../../assets/data/messages.json";
 import InputBox from "../components";
 
 const ChatScreen = () => {
+  const route = useRoute();
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    navigation.setOptions({ title: route.params.name });
+  }, [route.params.name]);
   return (
     <ImageBackground
       source={{
@@ -33,7 +40,6 @@ const ChatScreen = () => {
 const styles = StyleSheet.create({
   uri: {
     flex: 1,
-    marginTop: StatusBar.currentHeight,
   },
   list: {
     padding: 10,

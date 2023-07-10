@@ -10,12 +10,13 @@ import {
   SafeAreaProvider,
 } from "react-native-safe-area-context";
 import ChatScreen from "./src/screens/ChatScreen";
+import Navigator from "./src/Navigation";
 
 const App = () => {
   const insets = useSafeAreaInsets();
   return (
     <View style={styles.container}>
-      <ChatScreen />
+      <Navigator />
       <StatusBar style="auto" />
     </View>
   );
