@@ -13,7 +13,9 @@ import InviteFriendsScreen from "../screens/InviteFriendsScreen";
 import TelegramFeatures from "../screens/TelegramFeatures";
 import ChatListItem from "../components/ChatListItem";
 import HomeDrawer from "./DrawerNavigator";
-
+import { StatusBar } from "expo-status-bar";
+import { FadeIn } from "react-native-reanimated";
+import { MaterialIcons, MaterialCommunityIcons } from "@expo/vector-icons";
 const stack = createNativeStackNavigator();
 
 const HomeStack = () => {
@@ -39,17 +41,24 @@ const HomeStack = () => {
         component={ChatScreen}
         options={{
           headerTintColor: "white",
+          headerRight: () => [
+            <MaterialIcons
+              name="call"
+              size={24}
+              color="white"
+              style={{ marginRight: 20 }}
+            />,
+            <MaterialCommunityIcons
+              name="dots-vertical"
+              size={24}
+              color="white"
+            />,
+          ],
         }}
       />
     </stack.Navigator>
   );
 };
 
-const styles = StyleSheet.create({
-  menu: {
-    marginRight: 30,
-  },
-  search: {},
-});
-
+const styles = StyleSheet.create({});
 export default HomeStack;

@@ -12,8 +12,14 @@ import InviteFriendsScreen from "../screens/InviteFriendsScreen";
 import TelegramFeatures from "../screens/TelegramFeatures";
 import ChatListItem from "../components/ChatListItem";
 import ChatsScreen from "../screens/ChatsScreen";
-import { AntDesign } from "@expo/vector-icons";
+import {
+  FontAwesome,
+  MaterialIcons,
+  AntDesign,
+  Feather,
+} from "@expo/vector-icons";
 import CustomDrawer from "../components/CustomDrawer";
+import { HeaderButtons, Item } from "react-navigation-header-buttons";
 
 const Drawer = createDrawerNavigator();
 function HomeDrawer() {
@@ -41,9 +47,8 @@ function HomeDrawer() {
         options={{
           drawerLabel: "Home",
           headerTintColor: "white",
-          drawerIcon: () => {
-            <AntDesign name="home" size={24} color="black" />;
-          },
+          drawerIcon: () => <AntDesign name="home" size={24} color="black" />,
+          drawerStatusBarAnimation: "slide",
         }}
       />
       <Drawer.Screen
@@ -52,6 +57,7 @@ function HomeDrawer() {
         options={{
           title: "New Group",
           headerTintColor: "white",
+          drawerIcon: () => <Feather name="users" size={24} color="black" />,
         }}
       />
       <Drawer.Screen
@@ -61,6 +67,7 @@ function HomeDrawer() {
           drawerLabel: "Contacts",
           title: "Contacts",
           headerTintColor: "white",
+          drawerIcon: () => <Feather name="user" size={24} color="black" />,
         }}
       />
     </Drawer.Navigator>
