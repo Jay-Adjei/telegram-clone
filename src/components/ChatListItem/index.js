@@ -10,21 +10,29 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(relativeTime);
+import { useState } from "react";
+import { Value } from "react-native-reanimated";
 
-const ChatListItem = ({ chat }) => {
+function ChatListItem({ chat, toggleHeader }) {
   const navigation = useNavigation();
+  const [isClicked, setIsClicked] = useState(true);
+
+  const handleClick = () => {
+    setIsClicked(true);
+    toggleHeader(true);
+  };
 
   return (
     <SafeAreaView style={styles.maincontainer}>
       <ScrollView>
         <Pressable
-          onPress={() =>
-            navigation.navigate("Chat", { id: chat.id, name: chat.user.name })
-          }
+          onPress={() => {
+            navigation.navigate("Chat", { id: chat.id, name: chat.user.name });
+            handleClick;
+          }}
           style={styles.container}
         >
           <Image
@@ -51,7 +59,7 @@ const ChatListItem = ({ chat }) => {
       </ScrollView>
     </SafeAreaView>
   );
-};
+}
 
 const styles = StyleSheet.create({
   maincontainer: {

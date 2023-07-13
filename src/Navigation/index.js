@@ -1,54 +1,47 @@
-import { NavigationContainer } from "@react-navigation/native";
 import ChatScreen from "../screens/ChatScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import ChatsScreen from "../screens/ChatsScreen";
 import * as React from "react";
-import { Entypo, EvilIcons, Ionicons } from "@expo/vector-icons";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import NewGroupScreen from "../screens/NewGroupScreen";
+import ContactsScreen from "../screens/ContactsScreen";
+import CallsScreen from "../screens/CallsScreen";
+import PeopleNearbyScreen from "../screens/PeopleNearbyScreen";
+import SavedMessagesScreen from "../screens/SavedMessagesScreen";
+import SettingsScreen from "../screens/SettingsScreen";
+import InviteFriendsScreen from "../screens/InviteFriendsScreen";
+import TelegramFeatures from "../screens/TelegramFeatures";
+import ChatListItem from "../components/ChatListItem";
+import HomeDrawer from "./DrawerNavigator";
+
 const stack = createNativeStackNavigator();
-const Navigator = () => {
+
+const HomeStack = () => {
   return (
-    <NavigationContainer>
-      <stack.Navigator
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: "#229ED9",
-          },
+    <stack.Navigator
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: "#229ED9",
+        },
+      }}
+    >
+      <stack.Screen
+        name="Chats"
+        component={HomeDrawer}
+        options={{
+          title: "Telegarm",
+          headerTintColor: "white",
+          headerShown: false,
         }}
-      >
-        <stack.Screen
-          name="Chats"
-          component={ChatsScreen}
-          options={{
-            title: "Telegram",
-            headerTintColor: "white",
-            headerLeft: () => (
-              <Entypo
-                name="menu"
-                size={30}
-                color={"white"}
-                style={styles.menu}
-              />
-            ),
-            headerRight: () => (
-              <Ionicons
-                name="search"
-                size={30}
-                color={"white"}
-                style={styles.search}
-              />
-            ),
-          }}
-        />
-        <stack.Screen
-          name="Chat"
-          component={ChatScreen}
-          options={{
-            headerTintColor: "white",
-          }}
-        />
-      </stack.Navigator>
-    </NavigationContainer>
+      />
+      <stack.Screen
+        name="Chat"
+        component={ChatScreen}
+        options={{
+          headerTintColor: "white",
+        }}
+      />
+    </stack.Navigator>
   );
 };
 
@@ -59,4 +52,4 @@ const styles = StyleSheet.create({
   search: {},
 });
 
-export default Navigator;
+export default HomeStack;

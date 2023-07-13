@@ -27,7 +27,7 @@ const InputBox = () => {
         placeholder="Message"
         style={styles.TextInput}
       />
-
+      {/* group the attachment and mic icons and specify a boolen expression using the onchange function */}
       {/* icon */}
       <Entypo
         name="attachment"
