@@ -7,6 +7,7 @@ import HomeStack from "./src/Navigation";
 const App = () => {
   return (
     <NavigationContainer>
+      <StatusBar style="light" />
       <HomeStack />
     </NavigationContainer>
   );

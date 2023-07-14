@@ -1,10 +1,11 @@
 import { View, Text } from "react-native";
 import React from "react";
+import Calls from "../components/Calls";
+import chats from "../../assets/data/chats.json";
+import { FlatList } from "react-native";
 
 export default function CallsScreen() {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>CallsScreen</Text>
-    </View>
+    <FlatList data={chats} renderItem={({ item }) => <Calls chat={item} />} />
   );
 }
