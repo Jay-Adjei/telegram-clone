@@ -6,11 +6,18 @@ import HomeStack from "./src/Navigation";
 
 const App = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer style={styles.container}>
       <StatusBar style="light" />
       <HomeStack />
     </NavigationContainer>
   );
 };
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
 
 export default App;
