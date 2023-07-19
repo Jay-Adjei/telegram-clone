@@ -2,6 +2,7 @@ import { View, StyleSheet, TextInput } from "react-native";
 import React from "react";
 import { SimpleLineIcons, Entypo, Feather, Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
+import { onChange } from "react-native-reanimated";
 
 const InputBox = () => {
   const [newMessage, setNewMessage] = useState("");
@@ -19,7 +20,6 @@ const InputBox = () => {
         color={"gray"}
         style={styles.emoji}
       />
-
       {/* input box */}
       <TextInput
         value={newMessage}
@@ -29,24 +29,32 @@ const InputBox = () => {
       />
       {/* group the attachment and mic icons and specify a boolen expression using the onchange function */}
       {/* icon */}
-      <Entypo
-        name="attachment"
-        size={30}
-        color={"gray"}
-        style={styles.attach}
-      />
-
-      {/* icon */}
-      <Feather name="mic" size={30} color={"gray"} style={styles.mic} />
-
-      {/* icon */}
-      <Ionicons
-        onPress={OnSend}
-        style={styles.send}
-        name="send"
-        size={24}
-        color={"#30A3E6"}
-      />
+      {newMessage ? (
+        <Ionicons
+          onPress={OnSend}
+          style={styles.send}
+          name="send"
+          size={24}
+          color="#30A3E6"
+        />
+      ) : (
+        <>
+          <Entypo
+            key="attachment"
+            name="attachment"
+            size={30}
+            color="gray"
+            style={styles.attach}
+          />
+          <Feather
+            key="mic"
+            name="mic"
+            size={30}
+            color="gray"
+            style={styles.mic}
+          />
+        </>
+      )}
     </View>
   );
 };

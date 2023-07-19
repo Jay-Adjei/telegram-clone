@@ -18,10 +18,12 @@ import {
   AntDesign,
   Feather,
   FontAwesome,
+  MaterialCommunityIcons,
 } from "@expo/vector-icons";
 import CustomDrawer from "./CustomDrawer";
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
 import { RotateOutUpLeft } from "react-native-reanimated";
+import { Button } from "@react-native-material/core";
 
 const Drawer = createDrawerNavigator();
 function HomeDrawer() {
@@ -110,6 +112,27 @@ function HomeDrawer() {
           drawerLabel: "Saved Messages",
           title: "Saved Messages",
           headerTintColor: "white",
+          headerRight: () => [
+            <View style={styles.headerRightContainer}>
+              <MaterialIcons
+                name="call"
+                size={24}
+                color="white"
+                style={styles.iconStyle}
+              />
+              <MaterialCommunityIcons
+                name="dots-vertical"
+                size={24}
+                color="white"
+                style={styles.iconStyle}
+              />
+            </View>,
+          ],
+          headerLeft: () => (
+            <View style={styles.bookmarkcontainer}>
+              <Feather name="bookmark" size={24} color="white" />
+            </View>
+          ),
           drawerIcon: () => (
             <FontAwesome name="bookmark-o" size={24} color="gray" />
           ),
@@ -160,6 +183,23 @@ function HomeDrawer() {
     </Drawer.Navigator>
   );
 }
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  bookmarkcontainer: {
+    backgroundColor: "#7DA2EC",
+    borderRadius: 24,
+    width: 48,
+    height: 48,
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: 16,
+  },
+  iconStyle: {
+    marginLeft: 16,
+  },
+  headerRightContainer: {
+    flexDirection: "row",
+    marginRight: 16,
+  },
+});
 
 export default HomeDrawer;

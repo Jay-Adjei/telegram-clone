@@ -1,7 +1,6 @@
 import { View, StyleSheet, StatusBar, Button, Text } from "react-native";
 import React from "react";
 import Lottieanimation from "../animation/Lottieanimation";
-import PNBText from "../PNB/PNBText";
 
 export default function PeopleNearbyScreen() {
   return (
