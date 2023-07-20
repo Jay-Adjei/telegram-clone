@@ -112,10 +112,10 @@ function HomeDrawer() {
           drawerLabel: "Saved Messages",
           title: "Saved Messages",
           headerTintColor: "white",
-          headerRight: () => [
+          headerRight: () => (
             <View style={styles.headerRightContainer}>
               <MaterialIcons
-                name="call"
+                name="search"
                 size={24}
                 color="white"
                 style={styles.iconStyle}
@@ -126,8 +126,8 @@ function HomeDrawer() {
                 color="white"
                 style={styles.iconStyle}
               />
-            </View>,
-          ],
+            </View>
+          ),
           headerLeft: () => (
             <View style={styles.bookmarkcontainer}>
               <Feather name="bookmark" size={24} color="white" />

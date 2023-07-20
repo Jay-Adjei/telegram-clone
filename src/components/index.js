@@ -31,6 +31,7 @@ const InputBox = () => {
       {/* icon */}
       {newMessage ? (
         <Ionicons
+          key="send"
           onPress={OnSend}
           style={styles.send}
           name="send"

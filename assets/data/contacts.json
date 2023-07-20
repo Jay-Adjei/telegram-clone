@@ -1,0 +1,119 @@
+[
+  {
+    "id": "1",
+    "user": {
+      "id": "u2",
+      "name": "Jeffrey🤡☠",
+      "number": "0598756804",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/lukas.jpeg"
+    }
+  },
+  {
+    "id": "2",
+    "user": {
+      "id": "u3",
+      "name": "Charlcy😎😋",
+      "number": "0504701430",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg"
+    }
+  },
+  {
+    "id": "3",
+    "user": {
+      "id": "u4",
+      "name": "David☠",
+      "number": "0548670437",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/8.png"
+    }
+  },
+  {
+    "id": "4",
+    "user": {
+      "id": "u5",
+      "name": "Iyabode",
+      "number": "0598795722",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg"
+    }
+  },
+  {
+    "id": "5",
+    "user": {
+      "id": "u6",
+      "name": "Anna",
+      "number": "0557851925",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png"
+    }
+  },
+  {
+    "id": "6",
+    "user": {
+      "id": "u7",
+      "name": "Adrian",
+      "number": "0556415681",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/graham.jpg"
+    }
+  },
+  {
+    "id": "7",
+    "user": {
+      "id": "u8",
+      "name": "Borja",
+      "number": "0598448918",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg"
+    }
+  },
+  {
+    "id": "8",
+    "user": {
+      "id": "u9",
+      "name": "Mom",
+      "number": "0554887782",
+      "image": "https://image.shutterstock.com/image-vector/super-mom-hero-superhero-cartoon-600w-720015928.jpg"
+    }
+  },
+  {
+    "id": "9",
+    "user": {
+      "id": "u9",
+      "name": "Andrei",
+      "number": "0205494845",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg"
+    }
+  },
+  {
+    "id": "10",
+    "user": {
+      "id": "u9",
+      "name": "Misha",
+      "number": "0535448787",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/biahaze.jpg"
+    }
+  },
+  {
+    "id": "11",
+    "user": {
+      "id": "u9",
+      "name": "Alina",
+      "number": "0244904864",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/7.png"
+    }
+  },
+  {
+    "id": "12",
+    "user": {
+      "id": "u9",
+      "name": "Ivy",
+      "number": "0596565762",
+      "image": "https://c4.wallpaperflare.com/wallpaper/875/291/685/5bd324d3bb71f-wallpaper-preview.jpg"
+    }
+  },
+  {
+    "id": "13",
+    "user": {
+      "id": "u9",
+      "name": "Samira",
+      "number": "0594065031",
+      "image": "https://c4.wallpaperflare.com/wallpaper/894/554/384/kobe-bryant-desktop-wallpaper-preview.jpg"
+    }
+  }
+]
