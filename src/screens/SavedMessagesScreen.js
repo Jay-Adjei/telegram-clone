@@ -1,7 +1,6 @@
 import { View, Text, ImageBackground, StyleSheet, Image } from "react-native";
 import React from "react";
 import InputBox from "../components";
-import LottieView from "lottie-react-native";
 import cloud from "../animation/cloud.gif";
 
 export default function SavedMessagesScreen() {
