@@ -1,7 +1,6 @@
-import { View, Text, FlatList } from "react-native";
+import { FlatList } from "react-native";
 import chats from "../../assets/data/chats.json";
 import ChatListItem from "../components/ChatListItem";
-import { Ionicons } from "@expo/vector-icons";
 import React from "react";
 
 const ChatsScreen = () => {

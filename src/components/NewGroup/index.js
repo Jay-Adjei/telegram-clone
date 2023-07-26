@@ -3,7 +3,6 @@ import {
   Text,
   StyleSheet,
   SafeAreaView,
-  ScrollView,
   Image,
 } from "react-native";
 import React from "react";

@@ -1,4 +1,4 @@
-import { View, Text, FlatList } from "react-native";
+import { FlatList } from "react-native";
 import React from "react";
 import chats from "../../assets/data/chats.json";
 import NewGroup from "../components/NewGroup";

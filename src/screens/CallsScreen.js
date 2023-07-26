@@ -1,4 +1,3 @@
-import { View, Text } from "react-native";
 import React from "react";
 import Calls from "../components/Calls";
 import chats from "../../assets/data/chats.json";

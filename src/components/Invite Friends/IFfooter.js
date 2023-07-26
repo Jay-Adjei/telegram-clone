@@ -1,5 +1,4 @@
 import { View, Text, TextInput, StyleSheet } from "react-native";
-import { Entypo } from "@expo/vector-icons";
 import React from "react";
 
 export default function Footer({ selectedContacts }) {

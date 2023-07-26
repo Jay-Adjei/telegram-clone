@@ -1,5 +1,4 @@
-import { View, Text, TextInput, StyleSheet, FlatList } from "react-native";
-import { Entypo } from "@expo/vector-icons";
+import { View, StyleSheet, FlatList } from "react-native";
 import React from "react";
 import Contactlistitem from "../components/Invite Friends";
 import contacts from "../../assets/data/contacts.json";

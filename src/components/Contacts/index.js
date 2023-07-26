@@ -3,12 +3,10 @@ import {
   Text,
   StyleSheet,
   Image,
-  ScrollView,
   SafeAreaView,
 } from "react-native";
 import React from "react";
 import dayjs from "dayjs";
-import { CurrentRenderContext } from "@react-navigation/native";
 
 const Contacts = ({ chat }) => {
   return (

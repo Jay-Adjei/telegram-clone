@@ -5,7 +5,6 @@ import {
   ScrollView,
   Image,
   Pressable,
-  SafeAreaView,
 } from "react-native";
 import React from "react";
 import {
@@ -17,7 +16,6 @@ import {
   AntDesign,
 } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import { useState } from "react";
 
 export default function SettingsScreen() {
   const navigation = useNavigation();

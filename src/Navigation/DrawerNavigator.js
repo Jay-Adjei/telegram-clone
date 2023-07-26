@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
@@ -7,10 +6,8 @@ import ContactsScreen from "../screens/ContactsScreen";
 import CallsScreen from "../screens/CallsScreen";
 import PeopleNearbyScreen from "../screens/PeopleNearbyScreen";
 import SavedMessagesScreen from "../screens/SavedMessagesScreen";
-import SettingsScreen from "../screens/SettingsScreen";
 import InviteFriendsScreen from "../screens/InviteFriendsScreen";
 import TelegramFeatures from "../screens/TelegramFeatures";
-import ChatListItem from "../components/ChatListItem";
 import ChatsScreen from "../screens/ChatsScreen";
 import {
   Ionicons,

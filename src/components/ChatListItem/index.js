@@ -4,7 +4,6 @@ import {
   Image,
   StyleSheet,
   ScrollView,
-  StatusBar,
   SafeAreaView,
   Pressable,
 } from "react-native";
