@@ -1,8 +1,8 @@
+// importing necessary components and modules
 import { View, StyleSheet, TextInput } from "react-native";
 import React from "react";
 import { SimpleLineIcons, Entypo, Feather, Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
-import { onChange } from "react-native-reanimated";
 
 const InputBox = () => {
   const [newMessage, setNewMessage] = useState("");
@@ -27,7 +27,7 @@ const InputBox = () => {
         placeholder="Message"
         style={styles.TextInput}
       />
-      {/* group the attachment and mic icons and specify a boolen expression using the onchange function */}
+      {/* group the attachment and mic icons and specify a boolean expression using the onchange function */}
       {/* icon */}
       {newMessage ? (
         <Ionicons
@@ -36,7 +36,7 @@ const InputBox = () => {
           style={styles.send}
           name="send"
           size={24}
-          color="#30A3E6"
+          color="#0088cc"
         />
       ) : (
         <>
@@ -60,6 +60,7 @@ const InputBox = () => {
   );
 };
 
+// styling for the input box and icons
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
@@ -75,17 +76,17 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   emoji: {
-    padding: 5,
+    padding: 10,
   },
   TextInput: {
     flex: 1,
     padding: 5,
   },
   attach: {
-    padding: 5,
+    padding: 10,
   },
   mic: {
-    padding: 5,
+    padding: 10,
   },
   send: {
     padding: 5,
