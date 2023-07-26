@@ -1,22 +1,10 @@
 import ChatScreen from "../screens/ChatScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { createDrawerNavigator } from "@react-navigation/drawer";
-import NewGroupScreen from "../screens/NewGroupScreen";
-import ContactsScreen from "../screens/ContactsScreen";
-import CallsScreen from "../screens/CallsScreen";
-import PeopleNearbyScreen from "../screens/PeopleNearbyScreen";
-import SavedMessagesScreen from "../screens/SavedMessagesScreen";
-import SettingsScreen from "../screens/SettingsScreen";
-import InviteFriendsScreen from "../screens/InviteFriendsScreen";
-import TelegramFeatures from "../screens/TelegramFeatures";
-import ChatListItem from "../components/ChatListItem";
+import { StyleSheet } from "react-native";
 import HomeDrawer from "./DrawerNavigator";
-import { StatusBar } from "expo-status-bar";
-import { FadeIn } from "react-native-reanimated";
 import { MaterialIcons, MaterialCommunityIcons } from "@expo/vector-icons";
-import { HeaderButtons, Item } from "react-navigation-header-buttons";
+import { HeaderButtons } from "react-navigation-header-buttons";
 const stack = createNativeStackNavigator();
 
 const HomeStack = () => {
@@ -32,6 +20,7 @@ const HomeStack = () => {
   };
   return (
     <stack.Navigator
+      style={{ flex: 1 }}
       screenOptions={{
         headerStyle: {
           backgroundColor: "#229ED9",
@@ -52,6 +41,10 @@ const HomeStack = () => {
         component={ChatScreen}
         options={{
           headerTintColor: "white",
+          headerStyle: {
+            height: 50, // Adjust the height as desired
+            backgroundColor: "#229ED9",
+          },
           headerRight: () => [
             <MaterialIcons
               key="Callicon"

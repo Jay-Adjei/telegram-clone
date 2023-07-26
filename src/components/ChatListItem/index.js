@@ -14,7 +14,6 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(relativeTime);
 import { useState } from "react";
-import { Value } from "react-native-reanimated";
 
 function ChatListItem({ chat, toggleHeader }) {
   const navigation = useNavigation();
