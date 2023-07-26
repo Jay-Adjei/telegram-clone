@@ -1,26 +1,12 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import React from "react";
-import {
-  useSafeAreaInsets,
-  SafeAreaProvider,
-} from "react-native-safe-area-context";
 import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import ChatScreen from "./src/screens/ChatScreen";
-import Navigator from "./src/Navigation";
 import NewGroupScreen from "./src/screens/NewGroupScreen";
-import ContactsScreen from "./src/screens/ContactsScreen";
-import CallsScreen from "./src/screens/CallsScreen";
-import PeopleNearbyScreen from "./src/screens/PeopleNearbyScreen";
-import SavedMessagesScreen from "./src/screens/SavedMessagesScreen";
-import SettingsScreen from "./src/screens/SettingsScreen";
-import InviteFriendsScreen from "./src/screens/InviteFriendsScreen";
-import TelegramFeatures from "./src/screens/TelegramFeatures";
-import ChatListItem from "./src/components/ChatListItem";
 import ChatsScreen from "./src/screens/ChatsScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Entypo, AntDesign } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 const Drawer = createDrawerNavigator();
 const stack = createNativeStackNavigator();
@@ -36,7 +22,7 @@ const App = () => {
             width: 300,
           },
           headerStyle: {
-            backgroundColor: "#229ED9",
+            backgroundColor: "#0088cc",
           },
           drawerLabelStyle: {
             fontWeight: "bold",
@@ -47,7 +33,7 @@ const App = () => {
           name="chats"
           component={DrawerRouts}
           options={{
-            title: "Telegarm",
+            title: "Telegram",
             headerTintColor: "white",
             drawerIcon: () => {
               <AntDesign name="home" size={24} color="black" />;
@@ -78,7 +64,7 @@ function DrawerRouts() {
         name="Chats"
         component={ChatsScreen}
         options={{
-          title: "Telegarm",
+          title: "Telegram",
           headerTintColor: "white",
         }}
       />
