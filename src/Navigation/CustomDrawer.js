@@ -4,7 +4,6 @@ import { Entypo } from "@expo/vector-icons";
 import {
   DrawerContentScrollView,
   DrawerItemList,
-  DrawerItem,
 } from "@react-navigation/drawer";
 
 const CustomDrawer = (props) => {

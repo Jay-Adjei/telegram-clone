@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import NewGroupScreen from "../screens/NewGroupScreen";
@@ -19,11 +19,10 @@ import {
   Feather,
   FontAwesome,
   MaterialCommunityIcons,
+  Entypo,
 } from "@expo/vector-icons";
 import CustomDrawer from "./CustomDrawer";
-import { HeaderButtons, Item } from "react-navigation-header-buttons";
-import { RotateOutUpLeft } from "react-native-reanimated";
-import { Button } from "@react-native-material/core";
+import SettingsStack from "./settingsstack";
 
 const Drawer = createDrawerNavigator();
 function HomeDrawer() {
@@ -140,14 +139,60 @@ function HomeDrawer() {
       />
       <Drawer.Screen
         name="Settings"
-        component={SettingsScreen}
+        component={SettingsStack}
         options={{
           drawerLabel: "Settings",
+          headerShown: false,
           title: "Settings",
           headerTintColor: "white",
+          headerLeft: () => null,
+          headerRight: () => (
+            <View>
+              <View style={styles.headerRightContainer_Settings}>
+                <Ionicons name="ios-qr-code" size={24} color="white" />
+                <Ionicons
+                  name="search"
+                  size={24}
+                  color="white"
+                  style={{ paddingLeft: 20 }}
+                />
+                <MaterialCommunityIcons
+                  name="dots-vertical"
+                  size={24}
+                  color="white"
+                  style={{ paddingLeft: 20 }}
+                />
+              </View>
+              <View style={styles.photoicon}>
+                <MaterialIcons name="add-a-photo" size={24} color="gray" />
+              </View>
+            </View>
+          ),
+          headerTitle: () => (
+            <>
+              <View style={{ flexDirection: "row" }}>
+                <View style={{ flexDirection: "row" }}>
+                  <Image
+                    source={{
+                      uri: "https://c4.wallpaperflare.com/wallpaper/611/838/413/spiderman-hd-4k-superheroes-wallpaper-thumb.jpg",
+                    }}
+                    style={styles.image}
+                  />
+                </View>
+                <View>
+                  <Text style={styles.name}>Mr. Adjei</Text>
+                  <Text style={styles.status}>Online</Text>
+                </View>
+              </View>
+            </>
+          ),
           drawerIcon: () => (
             <Ionicons name="md-settings-outline" size={24} color="gray" />
           ),
+          headerStyle: {
+            height: 150, // Adjust the height as needed to accommodate the content
+            backgroundColor: "#2F95D6", // Add your desired background color
+          },
         }}
       />
 
@@ -199,6 +244,52 @@ const styles = StyleSheet.create({
   headerRightContainer: {
     flexDirection: "row",
     marginRight: 16,
+  },
+  headerRightContainer_Settings: {
+    flexDirection: "row",
+    bottom: 50,
+    padding: 5,
+  },
+  photoicon: {
+    position: "absolute",
+    backgroundColor: "white",
+    borderRadius: 25,
+    height: 50,
+    width: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    top: 55,
+    right: 20,
+    shadowColor: "#000000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.17,
+    shadowRadius: 3.05,
+    elevation: 4,
+  },
+  image: {
+    height: 60,
+    width: 60,
+    borderRadius: 50,
+    marginTop: 5,
+    marginLeft: 15,
+  },
+  icon: {
+    marginTop: 20,
+    marginLeft: 180,
+  },
+  name: {
+    marginTop: 10,
+    marginLeft: 20,
+    marginBottom: 7,
+    color: "white",
+  },
+  status: {
+    color: "white",
+    marginLeft: 20,
+    marginBottom: 10,
   },
 });
 
