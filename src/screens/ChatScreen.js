@@ -1,9 +1,6 @@
 import {
-  View,
-  Text,
   ImageBackground,
   StyleSheet,
-  StatusBar,
   FlatList,
 } from "react-native";
 import { useRoute, useNavigation } from "@react-navigation/native";
