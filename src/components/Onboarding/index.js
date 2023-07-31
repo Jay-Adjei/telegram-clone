@@ -7,12 +7,14 @@ import {
   Animated,
 } from "react-native";
 import React, { useState, useRef } from "react";
-import slides from "../../assets/data/slides.json";
-import OnboardingItem from "./OnboardingItem";
+import OnboardingItem from "./OnboardingItems";
 import { Entypo } from "@expo/vector-icons";
 import PageIndicator from "./PageIndicator";
+import slides from "../../../assets/data/slides";
+import { useNavigation } from "@react-navigation/native";
 
 const Onboarding = () => {
+  const navigation = useNavigation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollX = useRef(new Animated.Value(0)).current;
   const slidesRef = useRef(null);
@@ -23,7 +25,7 @@ const Onboarding = () => {
     setCurrentIndex(viewableItems[0].index);
   }).current;
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: "white" }}>
       <View>
         <Entypo
           name="moon"
@@ -52,8 +54,14 @@ const Onboarding = () => {
         />
         <PageIndicator data={slides} scrollX={scrollX} />
       </View>
+
       <View style={styles.button}>
-        <Button title="Start Messaging" />
+        <Button
+          title="Start Messaging"
+          onPress={() => {
+            navigation.navigate("LogInScreen");
+          }}
+        />
       </View>
     </View>
   );
@@ -63,6 +71,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     top: 50,
+    backgroundColor: "white",
   },
   button: {
     justifyContent: "center",

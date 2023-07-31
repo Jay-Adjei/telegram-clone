@@ -5,7 +5,8 @@ import React from "react"; //importing react
 import { NavigationContainer } from "@react-navigation/native"; //importing navigation container from react navigation
 import HomeStack from "./src/Navigation"; //importing the home stack from the navigation folder
 import LogInScreen from "./src/screens/LogInScreen";
-import Onboarding from "./src/onboarding";
+import CountryScreen from "./src/screens/CountryScreen";
+import Onboarding from "./src/components/Onboarding";
 
 // Define the main component of the app
 const App = () => {
@@ -17,7 +18,9 @@ const App = () => {
       {/* Rendering the HomeStack component from navigation */}
       {/* <HomeStack /> */}
       {/* <LogInScreen /> */}
-      <Onboarding />
+      <HomeStack />
+      {/* <CountryScreen /> */}
+      {/* <Onboarding /> */}
     </NavigationContainer>
   );
 };

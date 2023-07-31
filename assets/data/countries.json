@@ -1,0 +1,58 @@
+[
+  {
+    "image": "https://i.pinimg.com/236x/69/53/98/6953989aede7385fca741a03a960ac5d.jpg",
+    "name": "Afghanistan",
+    "code": "+93"
+  },
+  {
+    "image": "https://i.pinimg.com/236x/1d/ef/6a/1def6a26d75b44e78a7c6de6df761fd0.jpg",
+    "name": "Albania",
+    "code": "+355"
+  },
+  {
+    "image": "https://i.pinimg.com/236x/34/c6/17/34c617971ba266c93284fd2849f8d9d3.jpg",
+    "name": "Algeria",
+    "code": "+213"
+  },
+  {
+    "image": "https://i.pinimg.com/236x/82/29/d3/8229d318642967901dad17e551f817fb.jpg",
+    "name": "American Samoa",
+    "code": "+1684"
+  },
+
+  {
+    "image": "https://i.pinimg.com/236x/3b/fd/97/3bfd970beece891e9f096ba34bb21cae.jpg",
+    "name": "Andorra",
+    "code": "+376"
+  },
+  {
+    "image": "https://i.pinimg.com/564x/df/a6/9d/dfa69d3461d0e7fda734807e6a901dd8.jpg",
+    "name": "Angola",
+    "code": "+244"
+  },
+  {
+    "image": "https://i.pinimg.com/236x/00/52/4c/00524ce6d6a3633520e76ba8d19eb8e9.jpg",
+    "name": "Anguilla",
+    "code": "+1264"
+  },
+  {
+    "image": "https://i.pinimg.com/236x/e1/19/6d/e1196dbff93c717db2c509c943cf2e0c.jpg",
+    "name": "Antigua & Barbuda",
+    "code": "+888"
+  },
+  {
+    "image": "https://i.pinimg.com/236x/90/6a/38/906a389662fe2de5f460ef2e9dd3ecef.jpg",
+    "name": "Argentina",
+    "code": "+54"
+  },
+  {
+    "image": "https://i.pinimg.com/236x/ab/ed/d7/abedd77eb25f0d39935c2c1743ad635a.jpg",
+    "name": "Armenia",
+    "code": "+374"
+  },
+  {
+    "image": "https://i.pinimg.com/236x/16/ee/19/16ee19c25b24461f7933e378b4d1ee3e.jpg",
+    "name": "Ghana",
+    "code": "+233"
+  }
+]

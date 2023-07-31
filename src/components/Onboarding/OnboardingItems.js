@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     paddingTop: StatusBar.currentheight,
+    backgroundColor: "white",
   },
   image: {
     flex: 0.5,

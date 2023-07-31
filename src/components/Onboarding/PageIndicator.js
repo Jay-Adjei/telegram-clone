@@ -1,10 +1,4 @@
-import {
-  View,
-  Text,
-  StyleSheet,
-  useWindowDimensions,
-  Animated,
-} from "react-native";
+import { View, StyleSheet, useWindowDimensions, Animated } from "react-native";
 import React from "react";
 
 const PageIndicator = ({ data, scrollX }) => {
