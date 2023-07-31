@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-telegramclone-staging-44947-authRole",
+      "UnauthRoleArn": "arn:aws:iam::591049494163:role/amplify-telegramclone-staging-44947-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::591049494163:role/amplify-telegramclone-staging-44947-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-telegramclone-staging-44947-deployment",
+      "UnauthRoleName": "amplify-telegramclone-staging-44947-unauthRole",
+      "StackName": "amplify-telegramclone-staging-44947",
+      "StackId": "arn:aws:cloudformation:eu-north-1:591049494163:stack/amplify-telegramclone-staging-44947/d8fc6d50-2b6f-11ee-a115-06e8bc37cefc",
+      "AmplifyAppId": "d2fc6j91xa9r2h"
+    },
+    "categories": {
+      "auth": {
+        "TelegramClone": {}
+      }
+    }
+  }
+}

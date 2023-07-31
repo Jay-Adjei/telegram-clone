@@ -4,6 +4,8 @@ import { StyleSheet } from "react-native"; // importing necessary components fro
 import React from "react"; //importing react
 import { NavigationContainer } from "@react-navigation/native"; //importing navigation container from react navigation
 import HomeStack from "./src/Navigation"; //importing the home stack from the navigation folder
+import LogInScreen from "./src/screens/LogInScreen";
+import Onboarding from "./src/onboarding";
 
 // Define the main component of the app
 const App = () => {
@@ -13,7 +15,9 @@ const App = () => {
       {/* Setting the status bar to be white */}
       <StatusBar style="light" />
       {/* Rendering the HomeStack component from navigation */}
-      <HomeStack />
+      {/* <HomeStack /> */}
+      {/* <LogInScreen /> */}
+      <Onboarding />
     </NavigationContainer>
   );
 };

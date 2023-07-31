@@ -5,6 +5,7 @@ import * as React from "react";
 import HomeDrawer from "./DrawerNavigator";
 import { MaterialIcons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { HeaderButtons } from "react-navigation-header-buttons";
+import LogInScreen from "../screens/LogInScreen";
 
 // creating a native stack navigator
 const stack = createNativeStackNavigator();
@@ -32,6 +33,15 @@ const HomeStack = () => {
         },
       }}
     >
+      {/* <stack.Screen
+        name="Log In" // Name of the route
+        component={LogInScreen} // Component to render for this route
+        options={{
+          title: "Telegram", // Title to display in the header
+          headerTintColor: "white", // Styling for the header text color
+          headerShown: false, // Hide the header for this screen (not shown)
+        }}
+      /> */}
       {/* Screen for the "Chats" route */}
       <stack.Screen
         name="Chats" // Name of the route
